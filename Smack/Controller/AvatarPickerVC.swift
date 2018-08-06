@@ -54,6 +54,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
             avatarType = .dark
         } else { avatarType = .light
         }
+        
         collectionView.reloadData()
     }
     
