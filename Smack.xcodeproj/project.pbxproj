@@ -14,6 +14,8 @@
 		C85F6EDE2118965E00A05D46 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EDD2118965E00A05D46 /* AvatarPickerVC.swift */; };
 		C85F6EE021189E2300A05D46 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EDF21189E2300A05D46 /* AvatarCell.swift */; };
 		C85F6EE22118F22800A05D46 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EE12118F22800A05D46 /* CircleImage.swift */; };
+		C85F6EEA21190E2800A05D46 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EE821190E2800A05D46 /* ProfileVC.swift */; };
+		C85F6EEB21190E2800A05D46 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85F6EE921190E2800A05D46 /* ProfileVC.xib */; };
 		C875F4322115135D008B39DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875F4312115135D008B39DD /* AppDelegate.swift */; };
 		C875F4372115135D008B39DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C875F4352115135D008B39DD /* Main.storyboard */; };
 		C875F4392115135D008B39DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C875F4382115135D008B39DD /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		C85F6EDD2118965E00A05D46 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		C85F6EDF21189E2300A05D46 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C85F6EE12118F22800A05D46 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C85F6EE821190E2800A05D46 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C85F6EE921190E2800A05D46 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		C875F42E2115135D008B39DD /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C875F4312115135D008B39DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C875F4362115135D008B39DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,8 +113,17 @@
 				C8BA235F2117B9BB00F426D8 /* LoginVC.swift */,
 				C8BA23612117BD7200F426D8 /* CreateAccountVC.swift */,
 				C85F6EDD2118965E00A05D46 /* AvatarPickerVC.swift */,
+				C85F6EE821190E2800A05D46 /* ProfileVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C85F6EE721190C6E00A05D46 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				C85F6EE921190E2800A05D46 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		C875F4252115135D008B39DD = {
@@ -135,6 +148,7 @@
 		C875F4302115135D008B39DD /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				C85F6EE721190C6E00A05D46 /* XIBs */,
 				C8BA236321182C8B00F426D8 /* Services */,
 				C8BA235C2117B28600F426D8 /* Utilities */,
 				C8378BB92115201900936CD9 /* Model */,
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F6EEB21190E2800A05D46 /* ProfileVC.xib in Resources */,
 				C875F43C2115135D008B39DD /* LaunchScreen.storyboard in Resources */,
 				C875F4392115135D008B39DD /* Assets.xcassets in Resources */,
 				C875F4372115135D008B39DD /* Main.storyboard in Resources */,
@@ -296,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F6EEA21190E2800A05D46 /* ProfileVC.swift in Sources */,
 				C8378BBF2115206200936CD9 /* ChannelVC.swift in Sources */,
 				C85F6EDE2118965E00A05D46 /* AvatarPickerVC.swift in Sources */,
 				C8BA236721184EC900F426D8 /* RoundedButton.swift in Sources */,
