@@ -13,3 +13,5 @@ target 'Smack' do
   pod 'Socket.IO-Client-Swift'
 
 end
+
+pod 'SparkInspector'

@@ -159,7 +159,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="31P-gF-tYx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="31P-gF-tYx">
                                 <rect key="frame" x="63" y="160" width="250" height="97"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgv-fO-pph">
@@ -207,7 +207,7 @@
                                     <constraint firstAttribute="height" constant="50" id="sys-uA-xi1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -215,6 +215,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="FOD-75-c58" eventType="touchUpInside" id="3q3-KP-VQt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou9-fQ-5Zd">
                                 <rect key="frame" x="331" y="30" width="28" height="28"/>
@@ -239,18 +242,24 @@
                                     <color key="titleColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginBtnPressed:" destination="FOD-75-c58" eventType="touchUpInside" id="n8K-hj-6yZ"/>
+                                    <action selector="createAccountBtnPressed:" destination="FOD-75-c58" eventType="touchUpInside" id="itD-sv-hnN"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YYS-tE-1T3">
+                                <rect key="frame" x="169" y="389" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GPJ-g6-Fyj" firstAttribute="top" secondItem="wLt-KL-0ht" secondAttribute="top" constant="60" id="2KC-dD-mYp"/>
                             <constraint firstItem="DLs-N3-p7s" firstAttribute="top" secondItem="31P-gF-tYx" secondAttribute="bottom" constant="40" id="Hys-jB-Xjn"/>
                             <constraint firstItem="31P-gF-tYx" firstAttribute="top" secondItem="GPJ-g6-Fyj" secondAttribute="bottom" constant="40" id="I94-5s-nRT"/>
+                            <constraint firstItem="YYS-tE-1T3" firstAttribute="centerX" secondItem="ZTm-hm-ltv" secondAttribute="centerX" id="Qwc-gf-Can"/>
                             <constraint firstItem="ou9-fQ-5Zd" firstAttribute="top" secondItem="wLt-KL-0ht" secondAttribute="top" constant="10" id="SZ9-4m-Go4"/>
                             <constraint firstItem="wLt-KL-0ht" firstAttribute="trailing" secondItem="ou9-fQ-5Zd" secondAttribute="trailing" constant="16" id="VBy-O6-um3"/>
                             <constraint firstItem="atT-FF-2br" firstAttribute="centerX" secondItem="ZTm-hm-ltv" secondAttribute="centerX" id="e9o-3h-RQ2"/>
+                            <constraint firstItem="YYS-tE-1T3" firstAttribute="top" secondItem="atT-FF-2br" secondAttribute="bottom" constant="10" id="gcy-2c-jq9"/>
                             <constraint firstItem="31P-gF-tYx" firstAttribute="centerX" secondItem="ZTm-hm-ltv" secondAttribute="centerX" id="ges-Fx-2Pd"/>
                             <constraint firstItem="GPJ-g6-Fyj" firstAttribute="centerX" secondItem="ZTm-hm-ltv" secondAttribute="centerX" id="hjb-NA-BDA"/>
                             <constraint firstItem="DLs-N3-p7s" firstAttribute="centerX" secondItem="ZTm-hm-ltv" secondAttribute="centerX" id="kwx-I7-zHj"/>
@@ -259,6 +268,9 @@
                         <viewLayoutGuide key="safeArea" id="wLt-KL-0ht"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="ko5-wi-GPa" id="4uZ-pw-B2V"/>
+                        <outlet property="spinner" destination="YYS-tE-1T3" id="6vr-H9-4hU"/>
+                        <outlet property="usernameTxt" destination="xgv-fO-pph" id="qsR-HL-gQ0"/>
                         <segue destination="dtx-jl-lyT" kind="show" identifier="toCreateAccount" id="SKd-YG-zma"/>
                     </connections>
                 </viewController>
