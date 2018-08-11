@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class UserDataService {
     
     static let instance = UserDataService()

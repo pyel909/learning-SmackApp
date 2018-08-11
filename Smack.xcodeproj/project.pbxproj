@@ -16,6 +16,8 @@
 		C85F6EE22118F22800A05D46 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EE12118F22800A05D46 /* CircleImage.swift */; };
 		C85F6EEA21190E2800A05D46 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85F6EE821190E2800A05D46 /* ProfileVC.swift */; };
 		C85F6EEB21190E2800A05D46 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85F6EE921190E2800A05D46 /* ProfileVC.xib */; };
+		C8733985211F935B00C70375 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8733984211F935B00C70375 /* MessageService.swift */; };
+		C8733987211F939E00C70375 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8733986211F939E00C70375 /* Channel.swift */; };
 		C875F4322115135D008B39DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875F4312115135D008B39DD /* AppDelegate.swift */; };
 		C875F4372115135D008B39DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C875F4352115135D008B39DD /* Main.storyboard */; };
 		C875F4392115135D008B39DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C875F4382115135D008B39DD /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		C85F6EE12118F22800A05D46 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		C85F6EE821190E2800A05D46 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C85F6EE921190E2800A05D46 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		C8733984211F935B00C70375 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		C8733986211F939E00C70375 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		C875F42E2115135D008B39DD /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C875F4312115135D008B39DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C875F4362115135D008B39DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		C8378BB92115201900936CD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8733986211F939E00C70375 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			children = (
 				C8BA236421182CA000F426D8 /* AuthService.swift */,
 				C8BA2368211860E000F426D8 /* UserDataService.swift */,
+				C8733984211F935B00C70375 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,7 +321,9 @@
 				C8378BBF2115206200936CD9 /* ChannelVC.swift in Sources */,
 				C85F6EDE2118965E00A05D46 /* AvatarPickerVC.swift in Sources */,
 				C8BA236721184EC900F426D8 /* RoundedButton.swift in Sources */,
+				C8733987211F939E00C70375 /* Channel.swift in Sources */,
 				C85F6EE22118F22800A05D46 /* CircleImage.swift in Sources */,
+				C8733985211F935B00C70375 /* MessageService.swift in Sources */,
 				C8378BBD2115205200936CD9 /* ChatVC.swift in Sources */,
 				C8BA2369211860E000F426D8 /* UserDataService.swift in Sources */,
 				C8BA23622117BD7200F426D8 /* CreateAccountVC.swift in Sources */,
@@ -466,6 +474,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YR88S77DQ2;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pyel.Smack;
@@ -485,6 +494,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YR88S77DQ2;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
 				INFOPLIST_FILE = Smack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pyel.Smack;
